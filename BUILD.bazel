@@ -1,0 +1,6 @@
+cc_binary(
+	name = "main",
+	srcs = ["main.c"],
+	copts = [],
+	deps = ["@com_github_Xjs_dummy_dependency//:dummy"],
+)
