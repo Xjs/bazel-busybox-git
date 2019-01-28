@@ -2,7 +2,8 @@
 
 Built with `bash` as `BAZEL_SH`, this repository will work as intended:
 
-```$ bazel build main
+```
+$ bazel build main
 (18:49:43) INFO: Invocation ID: c1f69a03-d75e-4915-9425-a57da9e3e6a7
 (18:49:43) INFO: Current date is 2019-01-28
 (18:49:50) INFO: Rule 'com_github_Xjs_dummy_dependency' modified arguments {"shallow_since": "1548697538 +0100"}
@@ -17,7 +18,8 @@ Target //:main up-to-date:
 
 However, when trying to use [busybox-w32](https://github.com/rmyorston/busybox-w32) as a more lightweight `BAZEL_SH`, it will (even with tip, which includes a fix for https://github.com/rmyorston/busybox-w32/issues/138) fail as follows:
 
-```$ bazel build main
+```
+$ bazel build main
 (18:51:30) INFO: Invocation ID: ee11d830-2f72-4e2b-90fe-b6e49a02bcd9
 (18:51:30) INFO: Current date is 2019-01-28
 (18:51:35) ERROR: C:/users/jannis.schnitzer/src/github.com/xjs/bazel-busybox-git/BUILD.bazel:1:1: no such package '@com_github_Xjs_dummy_dependency//': Traceback (most recent call last):
